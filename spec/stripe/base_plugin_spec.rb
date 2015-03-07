@@ -20,7 +20,7 @@ describe Killbill::Stripe::PaymentPlugin do
       @plugin.conf_dir     = File.dirname(file)
       @account_api         = ::Killbill::Plugin::ActiveMerchant::RSpec::FakeJavaUserAccountApi.new
       @plugin.kb_apis      = Killbill::Plugin::KillbillApi.new('stripe', {})
-      @plugin.root         = '/something/plugin_name/version'
+      @plugin.root         = '/foo/killbill-stripe/0.0.1'
 
       # Start the plugin here - since the config file will be deleted
       @plugin.start_plugin

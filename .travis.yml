@@ -5,6 +5,7 @@ notifications:
     - kill-bill-commits@googlegroups.com
 
 rvm:
+  - jruby-19mode
   - jruby-20mode
   - jruby-head
 
@@ -16,6 +17,3 @@ jdk:
 matrix:
   allow_failures:
     - rvm: jruby-head
-  exclude:
-    - rvm: jruby-head
-      jdk: openjdk6
