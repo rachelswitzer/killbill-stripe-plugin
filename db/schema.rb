@@ -26,8 +26,6 @@ ActiveRecord::Schema.define(:version => 20140410153635) do
     t.boolean  "is_deleted",               :null => false, :default => false
     t.datetime "created_at",               :null => false
     t.datetime "updated_at",               :null => false
-    t.string   "kb_account_id"
-    t.string   "kb_tenant_id"
   end
 
   add_index(:stripe_payment_methods, :kb_account_id)

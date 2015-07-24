@@ -23,11 +23,8 @@ CREATE TABLE `stripe_payment_methods` (
   `country` varchar(255) DEFAULT NULL,
   `is_deleted` tinyint(1) NOT NULL DEFAULT '0',
   `created_at` datetime NOT NULL,
-  `updated_at` datetime NOT NULL,
-  `kb_account_id` varchar(255) DEFAULT NULL,
-  `kb_tenant_id` varchar(255) DEFAULT NULL,
+  `updated_at` datetime NOT NULL
   PRIMARY KEY (`id`),
-  KEY `index_stripe_payment_methods_on_kb_account_id` (`kb_account_id`),
   KEY `index_stripe_payment_methods_on_kb_payment_method_id` (`kb_payment_method_id`)
 ) ENGINE=InnoDB CHARACTER SET utf8 COLLATE utf8_bin;
 
