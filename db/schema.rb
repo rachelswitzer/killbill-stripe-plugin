@@ -28,7 +28,6 @@ ActiveRecord::Schema.define(:version => 20140410153635) do
     t.datetime "updated_at",               :null => false
   end
 
-  add_index(:stripe_payment_methods, :kb_account_id)
   add_index(:stripe_payment_methods, :kb_payment_method_id)
 
   create_table "stripe_transactions", :force => true do |t|
